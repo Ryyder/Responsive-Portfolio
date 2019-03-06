@@ -1,0 +1,341 @@
+/* Header specifications */
+header {
+    position: relative;
+    background-color: #ffffff;
+    font-family: Times;
+    width: 960px;
+    margin: 0 auto;
+    margin-top: -20px;
+}
+
+/* Position nav bar top right of page, within my margin */
+nav {
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin-top: 22px;
+    color: #4aaaa5;
+}
+
+/* Top header white color background */
+.headerBackground {
+    width: 100%;
+    background-color: #ffffff;
+}
+
+/* Content background color, margins */
+.sectionContent {
+    background-color: #ffffff;
+    font-family: Times;
+    color: #777777;
+    height: auto;
+    padding-top: 10px;
+    width: 960px;
+    margin: 0 auto;
+    background-image: none;
+}
+
+/* Links in gray color */
+a {
+    color: #4aaaa5;
+}
+
+/* Mouse-over link changes color */
+a:hover {
+    background-color: #666666;
+}
+
+/* Position name on top left of page */
+h1 {
+    top: 0;
+    left: 0;
+    padding-top: 20px;
+    color: #ffffff;
+}
+
+/* About Me text modifications */
+h2 {
+    padding-left: 10px;
+    color: #4aaaa5;
+}
+
+/* Background Image */
+body {
+    margin: 0;
+    background-image: url("../images/dynamic-style.png");
+}
+
+/* Text in <p> tag text in <section> gray */
+.bodyGray {
+    margin: 4px;
+    color: #777777;
+    line-height: 1.6;
+    padding-right: 10px;
+    font-family: sans-serif;
+}
+
+/* Header border specifications */
+.headerBorder {
+    background-color: #cccccc;
+    height: 2px;
+    width: 100%;
+    border: none;
+}
+
+/* Content border specifications */
+.contentBorder {
+    background-color: #dddddd;
+    height: 2px;
+    border: none;
+    width: 940px;
+}
+
+/* Footer */
+.footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    background-color: #666666;
+    border-top: 5px solid #cccccc;
+    text-align: center;
+    font-size: 10px;
+    color: #cccccc;
+    width: 100%;
+    font-family: sans-serif;
+}
+
+/* Highlighting Bruce in gray */
+.highLight {
+    background-color: #4aaaa5;
+    padding-bottom: 1px;
+    /* padding: 22px 10px 21px 10px; */
+}
+
+/* Defining small div for name */
+.nameBox {
+    width: 120px;
+    height: 60px;
+    text-align: center;
+}
+
+.navBox {
+    width: 170px;
+    /* height: 60px; */
+}
+
+/* Image positioning on index page*/
+.imgSelf {
+    float: left;
+    width: 200px;
+    height: 200px;
+    padding: 10px;
+}
+
+/* Positioning form element */
+form {
+    margin-left: 10px;
+    padding-top: 10px;
+    font-family: sans-serif;
+}
+
+/* positioning input element */
+input {
+    width: 99%;
+    padding: 10px;
+    padding-top: 10px;
+}
+
+/* Message box with adjustable vertical scroll */
+textarea {
+    width: 99%;
+    height: 100px;
+    padding: 10px;
+    border: 1px solid #cccccc;
+    resize: vertical;
+    overflow: auto;
+}
+
+/* Submit button */
+input[type=submit] {
+    margin-top: 10px;
+    width: 100px;
+    background-color: #4aaaa5;
+    color: #ffffff;
+    font-family: sans-serif;
+    border: none;
+}
+
+/* Make all box/text boxes same size */
+* {
+    box-sizing: border-box;
+} 
+
+/* Box settings for my floated images */
+.box {
+    position: relative;
+    float: left;
+    width: 33.33%;
+    padding: 10px;
+}
+
+/* Clearfix */
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+/* Text for portfolio page */
+.portfolioText {
+    position: absolute;
+    bottom: 0;
+    margin-bottom: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    text-align: center;
+    width: 74.9%;
+    background-color: gray;
+    color: #ffffff;
+    font-family: sans-serif;
+}
+
+/* Portfolio image setting */
+.portfolioImage {
+    height: 80%;
+    width: 80%;
+}
+
+.nav-item {
+    padding: 0;
+    margin: 0;
+}
+
+/* media queries at 980px breakpoint */
+@media screen and (max-width: 980px) {
+
+    header {
+        width: 90%;
+        position: static;
+    }
+
+    .headerBorder {
+        width: 100%;
+    }
+
+    nav {
+        /* left: 0 auto; */
+        margin-right: 48px;
+    } 
+
+    .contentBorder {
+        width: 98%;
+    }
+
+    .sectionContent {
+        position: absolute;
+        width: 80%;
+        margin-left: 48px;
+    }
+
+}
+
+/* media queries at 768px breakpoint */
+@media screen and (max-width: 768px) {
+    header {
+        width: 90%;
+        position: static;
+    }
+
+    .headerBorder {
+        width: 100%;
+    }
+
+    nav {
+        /* left: 0 auto; */
+        margin-right: 20px;
+    } 
+
+    .contentBorder {
+        width: 98%;
+    }
+
+    .sectionContent {
+        width: 90%;
+    }
+
+    .imgSelf {
+        width: 50%;
+        float: left;
+    }
+
+    textarea {
+        height: 150px;
+    }
+
+    .box {
+        width: 50%;        
+    }
+
+    .portfolioImage {
+        width: 90%;
+    }
+
+    .portfolioText {
+        width: 84%;
+    }
+}
+
+/* media queries at 640px breakpoint */
+@media screen and (max-width: 640px) {
+    header {
+        width: 100%;
+        position: static;
+        display: inline-block;
+        text-align: center;
+    }
+
+    nav {
+        width: 100%;
+        display: inline-block;
+        text-align: center;
+    }
+
+    .sectionContent {
+        width: 100%;
+        display:inline-block;
+        text-align: center;
+        margin-left: 0px;
+    }
+
+    .imgSelf {
+        width: 100%;
+        float: none;
+    }
+
+    .nameBox {
+        width: 100%;
+        display: inline-block;
+    }
+
+    .navBox {
+        width: 100%;
+        display: inline-block;
+    }
+
+    .box {
+        width: 100%;
+        display: inline-block;
+    }
+
+    .portfolioImage {
+        width: 100%;
+        display: inline-block;
+    }
+
+    .portfolioText {
+        width: 96.5%;
+        display: inline-block;
+    }
+
+
+}
