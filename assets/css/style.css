@@ -104,23 +104,23 @@ body {
     font-family: sans-serif;
 }
 
-/* Highlighting Bruce in gray */
+/* Highlighting Bruce*/
 .highLight {
     background-color: #4aaaa5;
     padding-bottom: 1px;
     /* padding: 22px 10px 21px 10px; */
 }
 
-/* Defining small div for name */
+/* container for name */
 .nameBox {
     width: 120px;
     height: 60px;
     text-align: center;
 }
 
+/* container for navbox */
 .navBox {
     width: 170px;
-    /* height: 60px; */
 }
 
 /* Image positioning on index page*/
@@ -203,11 +203,6 @@ input[type=submit] {
 .portfolioImage {
     height: 80%;
     width: 80%;
-}
-
-.nav-item {
-    padding: 0;
-    margin: 0;
 }
 
 /* media queries at 980px breakpoint */
@@ -297,13 +292,14 @@ input[type=submit] {
     nav {
         width: 100%;
         display: inline-block;
-        text-align: center;
+        /* text-align: center; */
         flex-wrap: wrap;
+        margin-top: 80px;
     }
 
     .sectionContent {
         width: 100%;
-        display:inline-block;
+        display: inline-block;
         margin-left: 0px;
     }
 
@@ -321,6 +317,8 @@ input[type=submit] {
         width: 100%;
         display: inline-block;
         flex-wrap: wrap;
+        margin-top: 50px;
+        text-align: center;
     }
 
     .box {
